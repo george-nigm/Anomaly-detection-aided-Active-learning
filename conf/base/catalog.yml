@@ -2,3 +2,23 @@
 #
 # Documentation for this file format can be found in "The Data Catalog"
 # Link: https://kedro.readthedocs.io/en/stable/05_data/01_data_catalog.html
+
+house_prices_advanced:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/house_prices_advanced.csv
+
+boston:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/boston.txt
+
+forest:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/forest.txt
+
+insurance:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/insurance.txt
+
+traffic:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/traffic.txt
