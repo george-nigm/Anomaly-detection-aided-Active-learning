@@ -1,5 +1,5 @@
 """Project settings."""
-from new_kedro_project.hooks import ProjectHooks
+from ad2ml.hooks import ProjectHooks
 
 # Instantiate and list your project hooks here
 HOOKS = (ProjectHooks(),)

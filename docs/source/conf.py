@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-# new_kedro_project documentation build
+# ad2ml documentation build
 # configuration file, created by sphinx-quickstart.
 #
 # This file is execfile()d with the current directory set to its
@@ -22,11 +22,11 @@ import re
 from kedro.framework.cli.utils import find_stylesheets
 from recommonmark.transform import AutoStructify
 
-from new_kedro_project import __version__ as release
+from ad2ml import __version__ as release
 
 # -- Project information -----------------------------------------------------
 
-project = "new_kedro_project"
+project = "ad2ml"
 author = "Kedro"
 
 # The short X.Y version.
@@ -148,8 +148,8 @@ latex_elements = {
 latex_documents = [
     (
         master_doc,
-        "new_kedro_project.tex",
-        "new_kedro_project Documentation",
+        "ad2ml.tex",
+        "ad2ml Documentation",
         "Kedro",
         "manual",
     )
@@ -162,8 +162,8 @@ latex_documents = [
 man_pages = [
     (
         master_doc,
-        "new_kedro_project",
-        "new_kedro_project Documentation",
+        "ad2ml",
+        "ad2ml Documentation",
         [author],
         1,
     )
@@ -177,11 +177,11 @@ man_pages = [
 texinfo_documents = [
     (
         master_doc,
-        "new_kedro_project",
-        "new_kedro_project Documentation",
+        "ad2ml",
+        "ad2ml Documentation",
         author,
-        "new_kedro_project",
-        "Project new_kedro_project codebase.",
+        "ad2ml",
+        "Project ad2ml codebase.",
         "Data-Science",
     )
 ]
