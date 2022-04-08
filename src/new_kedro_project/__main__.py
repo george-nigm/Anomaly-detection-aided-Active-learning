@@ -1,5 +1,5 @@
 """New Kedro Project file for ensuring the package is executable
-as `ad2ml` and `python -m ad2ml`
+as `new_kedro_project` and `python -m new_kedro_project`
 """
 import importlib
 from pathlib import Path

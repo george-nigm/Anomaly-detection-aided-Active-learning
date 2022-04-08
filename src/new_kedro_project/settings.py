@@ -1,5 +1,10 @@
 """Project settings."""
-from ad2ml.hooks import ProjectHooks
+from new_kedro_project.hooks import ProjectHooks
+
+from kedro_viz.integrations.kedro.sqlite_store import SQLiteStore
+from pathlib import Path
+SESSION_STORE_CLASS = SQLiteStore
+SESSION_STORE_ARGS = {"path": str(Path(__file__).parents[2] / "data")}
 
 # Instantiate and list your project hooks here
 HOOKS = (ProjectHooks(),)

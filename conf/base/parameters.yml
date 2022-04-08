@@ -1,1 +1,11 @@
+exp_name_1: exp_no_1_
+exp_name_2: exp_no_2_
+exp_name_3: exp_no_3_
 
+noised: noised_
+
+# choose from [EllipticEnvelope, OneClassSVM, IsolationForest, LocalOutlierFactor]
+anomaly_detector: EllipticEnvelope
+
+classificator: LogisticRegression
+active_learning_step: 1000

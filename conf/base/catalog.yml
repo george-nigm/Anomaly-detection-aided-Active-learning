@@ -3,30 +3,107 @@
 # Documentation for this file format can be found in "The Data Catalog"
 # Link: https://kedro.readthedocs.io/en/stable/05_data/01_data_catalog.html
 
-house_prices_advanced:
-  type: pandas.CSVDataSet
-  filepath: data/01_raw/house_prices_advanced.csv
+mnist-train-images:
+  type: new_kedro_project.extras.datasets.numpy_dataset.NumpyDataSet
+  filepath: data/03_primary/mnist-train-images.csv
+mnist-train-labels:
+  type: new_kedro_project.extras.datasets.numpy_dataset.NumpyDataSet
+  filepath: data/03_primary/mnist-train-labels.csv
+mnist-test-images:
+  type: new_kedro_project.extras.datasets.numpy_dataset.NumpyDataSet
+  filepath: data/03_primary/mnist-test-images.csv
+mnist-test-labels:
+  type: new_kedro_project.extras.datasets.numpy_dataset.NumpyDataSet
+  filepath: data/03_primary/mnist-test-labels.csv
 
-boston:
-  type: pandas.CSVDataSet
-  filepath: data/01_raw/boston.txt
+mnist-test-images-w-o-8:
+  type: new_kedro_project.extras.datasets.numpy_dataset.NumpyDataSet
+  filepath: data/04_feature/mnist-test-images-w-o-8.csv
+mnist-test-labels-w-o-8:
+  type: new_kedro_project.extras.datasets.numpy_dataset.NumpyDataSet
+  filepath: data/04_feature/mnist-test-labels-w-o-8.csv
 
-forest:
-  type: pandas.CSVDataSet
-  filepath: data/01_raw/forest.txt
+mnist-train-images-w-o-8:
+  type: new_kedro_project.extras.datasets.numpy_dataset.NumpyDataSet
+  filepath: data/05_model_input/mnist-train-images-w-o-8.csv
+mnist-train-labels-w-o-8:
+  type: new_kedro_project.extras.datasets.numpy_dataset.NumpyDataSet
+  filepath: data/05_model_input/mnist-train-labels-w-o-8.csv
 
-insurance:
-  type: pandas.CSVDataSet
-  filepath: data/01_raw/insurance.txt
 
-traffic:
-  type: pandas.CSVDataSet
-  filepath: data/01_raw/traffic.txt
+mnist-train-images-w-o-8-noised_other_classes:
+  type: new_kedro_project.extras.datasets.numpy_dataset.NumpyDataSet
+  filepath: data/05_model_input/mnist-train-images-w-o-8-noised_other_classes.csv
+mnist-train-labels-w-o-8-noised_other_classes:
+  type: new_kedro_project.extras.datasets.numpy_dataset.NumpyDataSet
+  filepath: data/05_model_input/mnist-train-labels-w-o-8-noised_other_classes.csv
 
-#mnist-train-images:
-#  type: pandas.CSVDataSet
-#  filepath: data/01_raw/traffic.txt
+first_expirements_predicts:
+  type: new_kedro_project.extras.datasets.numpy_dataset.NumpyDataSet
+  filepath: data/07_model_output/first_expirements_predicts.csv
 
 active_metrics_plot:
   type: matplotlib.MatplotlibWriter
   filepath: data/08_reporting/active_metrics_plot.png
+  versioned: True
+
+no_correct_classified_dynamic:
+  type: new_kedro_project.extras.datasets.numpy_dataset.NumpyDataSet
+  filepath: data/08_reporting/no_correct_classified_dynamic.csv
+
+train_volume:
+  type: new_kedro_project.extras.datasets.numpy_dataset.NumpyDataSet
+  filepath: data/08_reporting/train_volume.csv
+
+mnist-train-images-w-o-8-by_filter_classificator:
+  type: new_kedro_project.extras.datasets.numpy_dataset.NumpyDataSet
+  filepath: data/05_model_input/mnist-train-images-w-o-8-by_filter_classificator.csv
+
+mnist-train-labels-w-o-8-by_filter_classificator:
+  type: new_kedro_project.extras.datasets.numpy_dataset.NumpyDataSet
+  filepath: data/05_model_input/mnist-train-labels-w-o-8-by_filter_classificator.csv
+
+
+mnist-train-images-w-o-8-by_filter_classificator_after_ad:
+  type: new_kedro_project.extras.datasets.numpy_dataset.NumpyDataSet
+  filepath: data/05_model_input/mnist-train-images-w-o-8-by_filter_classificator_after_ad.csv
+
+mnist-train-labels-w-o-8-by_filter_classificator_after_ad:
+  type: new_kedro_project.extras.datasets.numpy_dataset.NumpyDataSet
+  filepath: data/05_model_input/mnist-train-labels-w-o-8-by_filter_classificator_after_ad.csv
+
+
+second_expirement_active_metrics_plot:
+  type: matplotlib.MatplotlibWriter
+  filepath: data/08_reporting/second_expirement_active_metrics_plot.png
+  versioned: True
+
+second_expirement_predicts:
+  type: new_kedro_project.extras.datasets.numpy_dataset.NumpyDataSet
+  filepath: data/07_model_output/second_expirement_predicts.csv
+
+second_expirement_no_correct_classified_dynamic:
+  type: new_kedro_project.extras.datasets.numpy_dataset.NumpyDataSet
+  filepath: data/08_reporting/second_expirement_no_correct_classified_dynamic.csv
+
+second_expirement_train_volume:
+  type: new_kedro_project.extras.datasets.numpy_dataset.NumpyDataSet
+  filepath: data/08_reporting/second_expirement_train_volume.csv
+
+
+third_expirement_active_metrics_plot:
+  type: matplotlib.MatplotlibWriter
+  filepath: data/08_reporting/third_expirement_active_metrics_plot.png
+  versioned: True
+
+third_expirement_predicts:
+  type: new_kedro_project.extras.datasets.numpy_dataset.NumpyDataSet
+  filepath: data/07_model_output/third_expirement_predicts.csv
+
+third_expirement_no_correct_classified_dynamic:
+  type: new_kedro_project.extras.datasets.numpy_dataset.NumpyDataSet
+  filepath: data/08_reporting/third_expirement_no_correct_classified_dynamic.csv
+
+third_expirement_train_volume:
+  type: new_kedro_project.extras.datasets.numpy_dataset.NumpyDataSet
+  filepath: data/08_reporting/third_expirement_train_volume.csv
